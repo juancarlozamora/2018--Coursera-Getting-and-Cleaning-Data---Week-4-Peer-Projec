@@ -96,6 +96,6 @@ melted <-melt(CombinedDataSetTidy,idVars,measure.vars=measures)
 # Recast melted data computing avarage of measures
 SecondTidy <- dcast(melted, activityname + subjectid ~ variable, mean)
 
-# Save the dataframe of averaged measures by activity and subject into txt file        
+# Save the dataframe of averaged measures by activity and subject into txt file       
 write.table(SecondTidy,"SecondTidy.txt" ,row.names = FALSE)
 
